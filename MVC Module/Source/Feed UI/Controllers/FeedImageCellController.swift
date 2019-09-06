@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import FeedFeature
 
 final class FeedImageCellController {
 	private let model: FeedImage

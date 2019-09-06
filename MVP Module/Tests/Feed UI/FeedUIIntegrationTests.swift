@@ -5,6 +5,7 @@
 import XCTest
 import UIKit
 import MVP
+import FeedFeature
 
 final class FeedUIIntegrationTests: XCTestCase {
 	

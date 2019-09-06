@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import FeedFeature
 
 public final class FeedUIComposer {
 	private init() {}

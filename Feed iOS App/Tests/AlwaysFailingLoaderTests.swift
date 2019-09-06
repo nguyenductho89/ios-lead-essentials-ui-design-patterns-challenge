@@ -3,7 +3,7 @@
 //
 
 import XCTest
-import MVC
+import FeedFeature
 import FeediOSApp
 
 final class AlwaysFailingLoaderTests: XCTestCase {
@@ -12,7 +12,7 @@ final class AlwaysFailingLoaderTests: XCTestCase {
 		let sut = AlwaysFailingLoader()
 		let exp = expectation(description: "Wait for load completion")
 		
-		sut.load { (result: MVC.FeedLoader.Result) in
+		sut.load { result in
 			switch result {
 			case .success: XCTFail("Expected failure, got \(result) instead")
 			default: break
@@ -29,7 +29,7 @@ final class AlwaysFailingLoaderTests: XCTestCase {
 		let exp = expectation(description: "Wait for load completion")
 		let url = URL(string: "http://any-url.com")!
 		
-		let _: MVC.FeedImageDataLoaderTask = sut.loadImageData(from: url) { (result: MVC.FeedImageDataLoader.Result) in
+		_ = sut.loadImageData(from: url) { result in
 			switch result {
 			case .success: XCTFail("Expected failure, got \(result) instead")
 			default: break

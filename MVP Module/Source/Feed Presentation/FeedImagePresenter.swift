@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import FeedFeature
 
 protocol FeedImageView {
 	associatedtype Image

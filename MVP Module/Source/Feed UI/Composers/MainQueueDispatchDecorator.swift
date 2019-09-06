@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import FeedFeature
 
 final class MainQueueDispatchDecorator<T> {
 	private let decoratee: T

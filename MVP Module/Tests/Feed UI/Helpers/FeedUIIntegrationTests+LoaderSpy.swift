@@ -4,6 +4,7 @@
 
 import Foundation
 import MVP
+import FeedFeature
 
 extension FeedUIIntegrationTests {
 	

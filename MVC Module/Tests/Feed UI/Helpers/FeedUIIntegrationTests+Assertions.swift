@@ -4,6 +4,7 @@
 
 import XCTest
 import MVC
+import FeedFeature
 
 extension FeedUIIntegrationTests {
 

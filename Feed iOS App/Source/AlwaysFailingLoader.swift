@@ -3,46 +3,26 @@
 //
 
 import Foundation
-import MVP
-import MVVM
-import MVC
+import FeedFeature
 
 public final class AlwaysFailingLoader {
 	public init() {}
 }
 
-extension AlwaysFailingLoader: MVC.FeedLoader, MVVM.FeedLoader, MVP.FeedLoader {
+extension AlwaysFailingLoader: FeedLoader {
 	private struct LoadError: Error {}
 	
-	public func load(completion: @escaping (MVC.FeedLoader.Result) -> Void) {
-		completion(.failure(LoadError()))
-	}
-	
-	public func load(completion: @escaping (MVVM.FeedLoader.Result) -> Void) {
-		completion(.failure(LoadError()))
-	}
-
-	public func load(completion: @escaping (MVP.FeedLoader.Result) -> Void) {
+	public func load(completion: @escaping (FeedLoader.Result) -> Void) {
 		completion(.failure(LoadError()))
 	}
 }
 	
-extension AlwaysFailingLoader: MVC.FeedImageDataLoader, MVVM.FeedImageDataLoader, MVP.FeedImageDataLoader {
-	private final class Task: MVC.FeedImageDataLoaderTask, MVVM.FeedImageDataLoaderTask, MVP.FeedImageDataLoaderTask {
+extension AlwaysFailingLoader: FeedImageDataLoader {
+	private final class Task: FeedImageDataLoaderTask {
 		func cancel() {}
 	}
 	
-	public func loadImageData(from url: URL, completion: @escaping (MVC.FeedImageDataLoader.Result) -> Void) -> MVC.FeedImageDataLoaderTask {
-		completion(.failure(LoadError()))
-		return Task()
-	}
-	
-	public func loadImageData(from url: URL, completion: @escaping (MVVM.FeedImageDataLoader.Result) -> Void) -> MVVM.FeedImageDataLoaderTask {
-		completion(.failure(LoadError()))
-		return Task()
-	}
-
-	public func loadImageData(from url: URL, completion: @escaping (MVP.FeedImageDataLoader.Result) -> Void) -> MVP.FeedImageDataLoaderTask {
+	public func loadImageData(from url: URL, completion: @escaping (FeedImageDataLoader.Result) -> Void) -> FeedImageDataLoaderTask {
 		completion(.failure(LoadError()))
 		return Task()
 	}

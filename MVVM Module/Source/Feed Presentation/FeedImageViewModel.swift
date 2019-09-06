@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import FeedFeature
 
 final class FeedImageViewModel<Image> {
 	typealias Observer<T> = (T) -> Void

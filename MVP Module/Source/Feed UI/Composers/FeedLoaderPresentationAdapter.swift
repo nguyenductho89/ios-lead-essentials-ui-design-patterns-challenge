@@ -2,6 +2,8 @@
 //  Copyright © 2019 Essential Developer. All rights reserved.
 //
 
+import FeedFeature
+
 final class FeedLoaderPresentationAdapter: FeedViewControllerDelegate {
 	private let feedLoader: FeedLoader
 	var presenter: FeedPresenter?

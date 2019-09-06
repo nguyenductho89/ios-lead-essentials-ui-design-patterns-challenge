@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08B614FE23225CE000908DB2"
-               BuildableName = "UI Challenge.app"
-               BlueprintName = "FeediOSApp"
+               BlueprintIdentifier = "08B615302322674A00908DB2"
+               BuildableName = "FeedFeature.framework"
+               BlueprintName = "FeedFeature"
                ReferencedContainer = "container:UIDesignPatternsChallenge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08B6151323225CE200908DB2"
-               BuildableName = "FeediOSAppTests.xctest"
-               BlueprintName = "FeediOSAppTests"
-               ReferencedContainer = "container:UIDesignPatternsChallenge.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08B614FE23225CE000908DB2"
-            BuildableName = "UI Challenge.app"
-            BlueprintName = "FeediOSApp"
-            ReferencedContainer = "container:UIDesignPatternsChallenge.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08B614FE23225CE000908DB2"
-            BuildableName = "UI Challenge.app"
-            BlueprintName = "FeediOSApp"
+            BlueprintIdentifier = "08B615302322674A00908DB2"
+            BuildableName = "FeedFeature.framework"
+            BlueprintName = "FeedFeature"
             ReferencedContainer = "container:UIDesignPatternsChallenge.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08B614FE23225CE000908DB2"
-            BuildableName = "UI Challenge.app"
-            BlueprintName = "FeediOSApp"
+            BlueprintIdentifier = "08B615302322674A00908DB2"
+            BuildableName = "FeedFeature.framework"
+            BlueprintName = "FeedFeature"
             ReferencedContainer = "container:UIDesignPatternsChallenge.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

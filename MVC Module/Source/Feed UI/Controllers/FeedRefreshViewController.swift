@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import FeedFeature
 
 final class FeedRefreshViewController: NSObject {
 	@IBOutlet var view: UIRefreshControl?

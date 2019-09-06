@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import FeedFeature
 
 protocol FeedLoadingView {
 	func display(_ viewModel: FeedLoadingViewModel)

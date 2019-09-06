@@ -4,6 +4,7 @@
 
 import Foundation
 import MVC
+import FeedFeature
 
 extension FeedUIIntegrationTests {
 	

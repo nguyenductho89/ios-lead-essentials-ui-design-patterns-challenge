@@ -4,6 +4,7 @@
 
 import Foundation
 import MVVM
+import FeedFeature
 
 extension FeedUIIntegrationTests {
 	

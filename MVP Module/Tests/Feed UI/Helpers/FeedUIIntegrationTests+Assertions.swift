@@ -4,6 +4,7 @@
 
 import XCTest
 import MVP
+import FeedFeature
 
 extension FeedUIIntegrationTests {
 
