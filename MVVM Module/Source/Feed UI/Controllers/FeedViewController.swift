@@ -33,6 +33,12 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
 		}
 	}
 
+	public override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+		
+		tableView.sizeTableHeaderToFit()
+	}
+	
 	public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return tableModel.count
 	}
