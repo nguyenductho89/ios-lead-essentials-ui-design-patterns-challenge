@@ -21,6 +21,10 @@ public final class ErrorView: UIView {
 	func show(message: String) {
 		label.text = message
 	}
+	
+	func hideMessage() {
+		label.text = nil
+	}
 }
 
 final class FeedRefreshViewController: NSObject {
@@ -32,6 +36,7 @@ final class FeedRefreshViewController: NSObject {
 
 	@IBAction func refresh() {
 		view?.beginRefreshing()
+		errorView?.hideMessage()
 		feedLoader?.load { [weak self] result in
 			do {
 				self?.onRefresh?(try result.get())
