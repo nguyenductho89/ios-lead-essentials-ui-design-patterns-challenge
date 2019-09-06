@@ -179,6 +179,11 @@ Location</string>
                         <outlet property="view" destination="yrT-VT-7jR" id="hIa-c0-RtF"/>
                     </connections>
                 </customObject>
+                <tapGestureRecognizer id="FYg-l9-JlU" userLabel="Hide Error Tap Gesture">
+                    <connections>
+                        <action selector="hideMessage" destination="clu-9B-M8g" id="HvM-ul-xPJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1105.7971014492755" y="-11.383928571428571"/>
         </scene>
