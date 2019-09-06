@@ -11,6 +11,7 @@
 		082072D323226B5700759471 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082072D023226B5700759471 /* FeedImageDataLoader.swift */; };
 		082072D423226B5700759471 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082072D123226B5700759471 /* FeedLoader.swift */; };
 		082072D92322C4E900759471 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082072D72322C4B600759471 /* ErrorView.swift */; };
+		082072DF2322CB3700759471 /* UITableView+HeaderSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082072DD2322CB1400759471 /* UITableView+HeaderSizing.swift */; };
 		08B6150B23225CE200908DB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B6150A23225CE200908DB2 /* Assets.xcassets */; };
 		08B6150E23225CE200908DB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B6150C23225CE200908DB2 /* LaunchScreen.storyboard */; };
 		08B6152423225D3100908DB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B6152323225D3100908DB2 /* AppDelegate.swift */; };
@@ -196,6 +197,7 @@
 		082072D023226B5700759471 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		082072D123226B5700759471 /* FeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		082072D72322C4B600759471 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		082072DD2322CB1400759471 /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
 		08B614FF23225CE000908DB2 /* UI Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6150A23225CE200908DB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B6150D23225CE200908DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -533,6 +535,7 @@
 				082072D72322C4B600759471 /* ErrorView.swift */,
 				08F3B5D5232252F300510CE7 /* UIImageView+Animations.swift */,
 				08F3B5D6232252F300510CE7 /* UITableView+Dequeueing.swift */,
+				082072DD2322CB1400759471 /* UITableView+HeaderSizing.swift */,
 				08F3B5D9232252F300510CE7 /* UIView+Shimmering.swift */,
 				08F3B5D8232252F300510CE7 /* Feed.storyboard */,
 				08F3B5DA232252F300510CE7 /* Feed.xcassets */,
@@ -1226,6 +1229,7 @@
 				08F3B611232254BE00510CE7 /* MainQueueDispatchDecorator.swift in Sources */,
 				08F3B5E1232252F300510CE7 /* FeedUIComposer.swift in Sources */,
 				08F3B5EC232252F300510CE7 /* Localized.swift in Sources */,
+				082072DF2322CB3700759471 /* UITableView+HeaderSizing.swift in Sources */,
 				08F3B5E4232252F300510CE7 /* FeedViewController.swift in Sources */,
 				08F3B5E6232252F300510CE7 /* UITableView+Dequeueing.swift in Sources */,
 				08F3B5E5232252F300510CE7 /* UIImageView+Animations.swift in Sources */,
