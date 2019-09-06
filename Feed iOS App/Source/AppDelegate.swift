@@ -27,8 +27,8 @@ public final class AppDelegate: UIResponder, UIApplicationDelegate {
 	private func mvc() -> UIViewController {
 		let view = UINavigationController(
 			rootViewController: MVC.FeedUIComposer.feedComposedWith(
-				feedLoader: AlwaysFailingLoader(),
-				imageLoader: AlwaysFailingLoader()))
+				feedLoader: AlwaysFailingLoader(delay: 1.5),
+				imageLoader: AlwaysFailingLoader(delay: 1.5)))
 		view.tabBarItem.title = "MVC"
 		return view
 	}
@@ -36,8 +36,8 @@ public final class AppDelegate: UIResponder, UIApplicationDelegate {
 	private func mvvm() -> UIViewController {
 		let view = UINavigationController(
 			rootViewController: MVVM.FeedUIComposer.feedComposedWith(
-				feedLoader: AlwaysFailingLoader(),
-				imageLoader: AlwaysFailingLoader()))
+				feedLoader: AlwaysFailingLoader(delay: 1.5),
+				imageLoader: AlwaysFailingLoader(delay: 1.5)))
 		view.tabBarItem.title = "MVVM"
 		return view
 	}
@@ -45,8 +45,8 @@ public final class AppDelegate: UIResponder, UIApplicationDelegate {
 	private func mvp() -> UIViewController {
 		let view = UINavigationController(
 			rootViewController: MVP.FeedUIComposer.feedComposedWith(
-				feedLoader: AlwaysFailingLoader(),
-				imageLoader: AlwaysFailingLoader()))
+				feedLoader: AlwaysFailingLoader(delay: 1.5),
+				imageLoader: AlwaysFailingLoader(delay: 1.5)))
 		view.tabBarItem.title = "MVP"
 		return view
 	}

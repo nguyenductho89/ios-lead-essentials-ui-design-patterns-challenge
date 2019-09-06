@@ -9,7 +9,7 @@ import FeediOSApp
 final class AlwaysFailingLoaderTests: XCTestCase {
 	
 	func test_loadFeed_alwaysFails() {
-		let sut = AlwaysFailingLoader()
+		let sut = AlwaysFailingLoader(delay: 0)
 		let exp = expectation(description: "Wait for load completion")
 		
 		sut.load { result in
@@ -25,7 +25,7 @@ final class AlwaysFailingLoaderTests: XCTestCase {
 	}
 	
 	func test_loadFeedImage_alwaysFails() {
-		let sut = AlwaysFailingLoader()
+		let sut = AlwaysFailingLoader(delay: 0)
 		let exp = expectation(description: "Wait for load completion")
 		let url = URL(string: "http://any-url.com")!
 		
