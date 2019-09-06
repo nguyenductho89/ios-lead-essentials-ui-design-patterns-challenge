@@ -5,17 +5,38 @@
 import UIKit
 import FeedFeature
 
+public final class ErrorView: UIView {
+	@IBOutlet private var label: UILabel!
+	
+	public var message: String? {
+		get { return label.text }
+	}
+	
+	public override func awakeFromNib() {
+		super.awakeFromNib()
+		
+		label.text = nil
+	}
+	
+	func show(message: String) {
+		label.text = message
+	}
+}
+
 final class FeedRefreshViewController: NSObject {
 	@IBOutlet var view: UIRefreshControl?
+	@IBOutlet var errorView: ErrorView?
 
 	var feedLoader: FeedLoader?
 	var onRefresh: (([FeedImage]) -> Void)?
-	
+
 	@IBAction func refresh() {
 		view?.beginRefreshing()
 		feedLoader?.load { [weak self] result in
-			if let feed = try? result.get() {
-				self?.onRefresh?(feed)
+			do {
+				self?.onRefresh?(try result.get())
+			} catch {
+				self?.errorView?.show(message: Localized.feedLoadError)
 			}
 			self?.view?.endRefreshing()
 		}
